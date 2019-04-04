@@ -13,4 +13,4 @@ Functionalities:
 	2.Our interface will have a template to specify input information, so the user can't randomly input whatever they want, and the page also prompt the user to input the correct information.
 	3.After we collect correct information from user, our server will respond a result page for the user to confirm the information.
 
-Execution scenarios:
+Execution scenarios/ Massage format:(picture)
