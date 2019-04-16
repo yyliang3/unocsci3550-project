@@ -25,6 +25,18 @@
 	font-size: 110%;
 
 	}
+	select
+	{
+ 	 right: 150px;
+ 	 width: 200px;
+  	height: 120px;
+	}
+	h2
+	{
+	padding-left:50px;
+	color: blue;
+
+	}
 	</style>
 
     </head>
@@ -38,35 +50,62 @@
 	<p> If you have encountered with some problems? Please leave the comment, and we will contact you as soon as we can</p>
 	<p> Thank you for choosing JY delivery </p>
 
-	<form action="project.cgi" method="get">
+	<form action="order.html" method="get">
 	
-	 <p> Optional Chioce: <input type="checkbox" name="="> Need Artificial Consultation? </p>
+	 <p>  Do you need artificial consultation?: <input type="radio" name="Y" value="Yes" required> Yes  
+						     <input type="radio" name="Y" value="No"required> No <br></p>
 	 
-	 <br>
-	 <p> How many people do you have?: <input type="radio" name="=" value="1~2"> 1 ~ 2
-		     <input type="radio" name="=" value="2~4"> 2 ~ 4 
-	 	     <input type="radio" name="=" value=">4"> More than 4 <br></p>
+	 
+	 <p> How many people do you have?: <input type="radio" name=" " value="1or2"required> 1 ~ 2
+		     <input type="radio" name=" " value="2or4"required> 2 ~ 4 
+	 	     <input type="radio" name=" " value=">4"required> More than 4 <br></p>
 	
-	 <p> First Name: <input type="text" name="="><br></p>
-	 <p> Last Name: <input type="text" name="="><br></p>
-	 <p> Email Address: <input type="email" name="="><br> </p>
-         <p> ZIP Code: <input type="rel" maxlength="5" name="=" required><br></p>
-         <p> State: <input type="text" maxlength="2" name="="><br></p>
-	 <p> Enter your feedback:<br>
-	 <textarea name="=" rows="10" cols="20" required></textarea></p>
-	 <p> Select your requirement: <select name="=" size="3" multiple> 
+	 <p> First Name: <input type="text" name=" "required><br></p>
+	 <p> Last Name: <input type="text" name=" "required><br></p>
+	 <p> Email Address: <input type="email" name=" "required><br> </p>
+         <p> ZIP Code: <input type="rel" maxlength="5" name=" " required><br></p>
+	  <p style="color:red;margin-left:120px;font-size: 150%;">  Menu: </p>
+	<h2><select name=" " size="4" multiple required>
+	 <optgroup label="Appetizer">
+ 	 <option>Fried-chicken-wings</option>
+	 <option>Spring-rolls</option>
+ 	 <option>Salad</option></optgroup>
+	</select>
+	<br>
+	<select name=" " size="3" multiple required>
+	 <optgroup label="Soup">
+ 	 <option>Hot-and-sour-soup</option>
+	 <option>Egg-soup</option>
+	</select>
+	<br>
+	<select name=" " size="10" multiple required>
+	 <optgroup label="Entree">
+ 	 <option>Orange-chicken</option>
+	 <option>Sesame-chicken</option>
+ 	<option>Beef-with-broccoli</option>
+ 	<option>Mongolian-beef</option>
+ 	<option>Moo-Shu-pork</option>
+ 	<option>Pork-with-bell-pepper</option>
+	</select>
+	</h2>
+	 
+	 <p style="margin-left:50px;"> Select your extra requirement: </p>
+	<h2>
+	<select name=" " size="14" multiple required> 
 	 <optgroup label="Free requirement">
- 	 <option>Extra Entree</option>
-	 <option>Less Spicy</option>
- 	 <option>Beverage Without Ice</option></optgroup>
+ 	 <option>Extra-Entree</option>
+	 <option>Less-Spicy</option>
+ 	 <option>Beverage-Without-Ice</option></optgroup>
 	 <optgroup label="Extra fee requirement">
- 	 <option>Helicopter Delivery</option>
- 	 <option>Highest Level Cookers</option></optgroup>
+ 	 <option>Helicopter-Delivery</option>
+ 	 <option>Highest-Level-Cookers</option></optgroup>
 	 </select>
+	</h2>
 
-
-
-	 <p><input type="submit" name = "=" value="submit" />
+	<p> Where did you hear about us?:<br>
+	<textarea name=" " rows="5" cols="30" required></textarea></p>
+	
+	 <p><input type="submit" name = " " value="submit" />
 	 <input type="reset" value="Reset!"> </p>
 
 	 </form>
