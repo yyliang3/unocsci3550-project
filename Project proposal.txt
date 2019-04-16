@@ -3,7 +3,7 @@ Professor: Harvey Siy
 Project title: Online Delivery Services
 Pairs: 
 	Zexi Xing will focus on part of server designing, debugging, testing. Also he will take care the HTML page arrangement part.  
-	Yi Liang will work on the network connection between client and server. 
+	Yi Liang will work on the network connection between client and server. Moreover she also has the responsibility for common gateway interface(CGI: for transferring user’s request and sending user’s data to our server. After that, our server will create a file to respond user’s request and let user check user’s input). 
 
 Purpose:
 	We will make a server which can use outside looping network to open a HTML page. And then connect to the server. In the HTML page, there will open a new questionnaire, users are required to fill in some basic information. The server receives the information, and gives some replies. Our project is given to customer who need to online food ordering service. 
