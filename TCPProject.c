@@ -1,3 +1,8 @@
+/*
+Resouce:https://www.geeksforgeeks.org/c-program-replace-word-text-another-given-word/
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
