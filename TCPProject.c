@@ -1,8 +1,6 @@
 /*
 Resouce:https://www.geeksforgeeks.org/c-program-replace-word-text-another-given-word/
 */
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -34,8 +32,7 @@ struct ThreadArgs
 void *ThreadMain(void *args);
 void HandleTCPClient(int new_socket);
 
-char *replaceWord(const char *s, const char *oldW, 
-                                 const char *newW) 
+char *replaceWord(const char *s, const char *oldW, const char *newW) 
 { 
     char *result; 
     int i, cnt = 0; 
@@ -48,7 +45,7 @@ char *replaceWord(const char *s, const char *oldW,
         { 
             cnt++; 
   
-                        i += oldWlen - 1; 
+            i += oldWlen - 1; 
         } 
     } 
   
@@ -226,32 +223,34 @@ void HandleTCPClient(int new_socket)
 								}
 								break;
 							case 3:
-								fprintf(newFile,"<p> Dear %s --",fin);
+								fprintf(newFile,"<p> Dear <b>%s  ",fin); 
 								break;
 							case 4:
-								fprintf(newFile, "%s</p>\n",fin);
+								fprintf(newFile, "%s </b></p>\n",fin);
 								break;
 							case 5:
-								fprintf(newFile, "<p>Comfirm your email address: %s</p>\n",fin);
+								fprintf(newFile, "<p>Comfirm your email address: ");
+								fprintf(newFile,"<b>%s</b></p>\n",fin);
 								break;
 							case 6:
-								fprintf(newFile, "<p>Your zip code is %s</p>\n",fin);
+								fprintf(newFile, "<p>Your zip code is ");
+								fprintf(newFile,"<b>%s</b></p>\n",fin);
 								break;
 							case 7: 
 								fprintf(newFile, "<p style=\"color: red; margin-left: 80px; font-size: 150%%;\">Here is your menu: </p>\n");
-								fprintf(newFile, "<p>Your ordered %s as appetizer</p>\n",fin);
+								fprintf(newFile, "<p>Your ordered <b>%s</b> as appetizer</p>\n",fin);
 								break;
 							case 8:
-								fprintf(newFile, "<p>Your ordered %s as soup</p>\n",fin);
+								fprintf(newFile, "<p>Your ordered <b>%s</b> as soup</p>\n",fin);
 								break;
 							case 9:
-								fprintf(newFile, "<p>Your ordered %s as entree</p>\n",fin);
+								fprintf(newFile, "<p>Your ordered <b>%s</b> as entree</p>\n",fin);
 								break;
 							case 10:
-								fprintf(newFile, "<p>Our restaurant will extra provide %s for you.</p>\n",fin);
+								fprintf(newFile, "<p>Our restaurant will extra provide <b>%s</b> for you.</p>\n",fin);
 								break;
 							case 11:
-								fprintf(newFile, "<p>Thanks you for hearing us from %s.</p>\n",fin);
+								fprintf(newFile, "<p>Thanks you for hearing us from <b>%s</b></p>\n",fin);
 								break;							
 						}			
 						number++;
