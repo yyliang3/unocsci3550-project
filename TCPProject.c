@@ -1,5 +1,6 @@
 /*
 Resouce:https://www.geeksforgeeks.org/c-program-replace-word-text-another-given-word/
+
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -158,7 +159,7 @@ void HandleTCPClient(int new_socket)
 	
 	valread = read( new_socket , buffer, MAXLINE);
 	buffer[valread] = '\0';
-	printf("This is a buffer %s\n",buffer);
+	printf("This is a buffer %s and we are cool!/n",buffer);
 	temp = strtok(buffer, " ");
 		
 	if (temp != NULL && strcmp(temp,HEAD) == 0)
